@@ -37,10 +37,3 @@ spec:
                       description: "[Azure-only] ID of a resource group to associate the bucket with. Will create one with this name if not exists."
               required:
                 - id
-            status:
-              type: object
-              properties:
-                subnetIds:
-                  type: array
-                  items:
-                    type: string
