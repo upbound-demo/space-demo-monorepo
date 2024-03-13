@@ -2,8 +2,6 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   name: xcustombuckets.infrastructure.example.org
-  labels:
-    provider: aws
 spec:
   compositeTypeRef:
     apiVersion: infrastructure.example.org/v1alpha1

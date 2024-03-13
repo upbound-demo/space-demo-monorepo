@@ -1,0 +1,7 @@
+apiVersion: infrastructure.example.org/v1alpha1
+kind: CustomBucket
+metadata:
+  name: bucket2
+  namespace: default
+spec:
+  id: my-custombucket2

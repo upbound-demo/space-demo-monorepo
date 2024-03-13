@@ -5,7 +5,7 @@ metadata:
 spec:
   credentials:
     secretRef:
-      key: secret-access-key
+      key: creds
       name: providerconfig-creds-test
       namespace: default
     source: Secret
