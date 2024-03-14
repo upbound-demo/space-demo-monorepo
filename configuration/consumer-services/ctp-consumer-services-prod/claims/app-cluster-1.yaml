@@ -10,10 +10,15 @@ spec:
     id: app-cluster-1
     providerConfigName: default
     region: us-east-1
+    version: "1.29"
     gitops:
       operator: argocd
       git:
         url: https://github.com/upbound-demo/space-demo-monorepo
+        ref:
+          name: refs/heads/main
     nodes:
       count: 1
       instanceType: t3.small
+  writeConnectionSecretToRef:
+    name: appcluster-1-kubeconfig
