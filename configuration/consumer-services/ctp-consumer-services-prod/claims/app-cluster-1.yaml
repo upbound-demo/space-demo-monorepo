@@ -1,0 +1,19 @@
+apiVersion: caas.upbound.io/v1alpha1
+kind: Cluster
+metadata:
+  name: app-cluster-1
+  namespace: default
+spec:
+  parameters:
+    cloud: aws
+    deletionPolicy: Delete
+    id: app-cluster-1
+    providerConfigName: default
+    region: us-east-1
+    gitops:
+      operator: argocd
+      git:
+        url: https://github.com/upbound-demo/space-demo-monorepo
+    nodes:
+      count: 1
+      instanceType: t3.small
