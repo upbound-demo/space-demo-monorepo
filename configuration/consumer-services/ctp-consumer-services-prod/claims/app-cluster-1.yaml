@@ -18,7 +18,7 @@ spec:
         ref:
           name: refs/heads/main
     nodes:
-      count: 1
-      instanceType: t3.small
+      count: 2
+      instanceType: t3.medium
   writeConnectionSecretToRef:
     name: appcluster-1-kubeconfig
