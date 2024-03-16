@@ -1,0 +1,16 @@
+apiVersion: spaces.upbound.io/v1alpha1
+kind: SharedBackupSchedule
+metadata:
+  name: sharedbackupschedule-weekly
+  namespace: consumer-services
+  labels:
+    acmeco/team: consumer-services
+    acmeco/environment: prod
+    acmeco/environment: test
+spec:
+  controlPlaneSelector:
+    labelSelectors:
+      - matchExpressions:
+          - { key: acmeco/environment, operator: In, values: [prod,test] }
+  schedule: "@weekly"
+  

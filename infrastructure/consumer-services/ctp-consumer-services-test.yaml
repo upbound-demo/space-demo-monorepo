@@ -10,6 +10,9 @@ spec:
   crossplane:
     autoUpgrade:
       channel: Rapid 
+  backup:
+    sharedBackupConfigRef:
+      name: default
   writeConnectionSecretToRef:
     name: kubeconfig-controlplane-consumer-services-test
     namespace: consumer-services
