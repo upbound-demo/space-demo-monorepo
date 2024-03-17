@@ -2,9 +2,9 @@ apiVersion: spaces.upbound.io/v1alpha1
 kind: SharedBackupConfig
 metadata:
   name: default
-  namespace: consumer-services
+  namespace: manufacturing-services
   labels:
-    acmeco/team: consumer-services
+    acmeco/team: manufacturing-services
     acmeco/environment: prod
 spec:
   objectStorage:

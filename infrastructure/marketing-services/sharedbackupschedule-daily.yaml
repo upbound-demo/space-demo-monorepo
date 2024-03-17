@@ -1,0 +1,15 @@
+apiVersion: spaces.upbound.io/v1alpha1
+kind: SharedBackupSchedule
+metadata:
+  name: sharedbackupschedule-daily
+  namespace: marketing-services
+  labels:
+    acmeco/team: marketing-services
+    acmeco/environment: prod
+spec:
+  controlPlaneSelector:
+    labelSelectors:
+      - matchExpressions:
+          - { key: acmeco/environment, operator: In, values: [prod] }
+  schedule: "@daily"
+  
